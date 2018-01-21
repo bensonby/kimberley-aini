@@ -64,25 +64,25 @@ upper-verse-one = \relative c'' {
 }
 
 lower-verse-one = \relative c' {
-  a8( e') r e r e
-  fis,8( e') r e r e
-  d,8( e') r e r e
-  d,8( e') r e r e
-  a,8( e') r e r e
-  fis,8( e') r e r e
-  d,8( e') r e r e
-  e,8( e') r e r e
+  a8( e') r e-. r e-.
+  fis,8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  a,8( e') r e-. r e-.
+  fis,8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  e,8( e') r e-. r e-.
 
-  a,8( e') r e r e
-  fis,8( e') r e r e
-  d,8( e') r e r e
-  d,8( e') r e r e
-  a,8( e') r e r gis,
-  fis8( e') r e r e
-  d,8( e') r e r e
-  e,8( e') r e r e
+  a,8( e') r e-. r e-.
+  fis,8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  a,8( e') r e-. r gis,
+  fis8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  e,8( e') r e-. r e-.
 
-  a,8( e') r e r e
+  a,8( e') r e-. r e-.
 }
 
 upper-chorus-one = \relative c'' {
@@ -101,27 +101,27 @@ upper-chorus-one = \relative c'' {
 }
 
 lower-chorus-one = \relative c' {
-  a8( e') r e a, gis
+  a8( e') r e-. a,[ gis]
 
-  fis8( e') r e r e
-  d,8( e') r e r e
-  a,8( e') r e r e
-  e,8( e') r e r e
+  fis8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  a,8( e') r e-. r e-.
+  e,8( e') r e-. r e-.
 
-  fis,8( e') r e r e
-  d,8( e') r e r e
-  a,8( e') r e r e
-  e,8( e') r e e, eis
+  fis,8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  a,8( e') r e-. r e-.
+  e,8( e') r e-. e,[ eis]
 
-  fis8( e') r e r e
-  d,8( e') r e r e
-  a,8( e') r e r e
-  e,8( e') r e r e
+  fis8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  a,8( e') r e-. r e-.
+  e,8( e') r e-. r e-.
 
-  b,8 fis' \cr a d fis a
-  \cl cis,, e \cr a cis e a
-  \cl d,, a' \cr d f a d
-  \cl e,, gis \cr b e gis b
+  b,8[ fis'] \cr a d fis a
+  \cl cis,,[ e] \cr a cis e a
+  \cl d,,[ a'] \cr d f a d
+  \cl e,,[ gis] \cr b e gis b
   \cl
 }
 
