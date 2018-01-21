@@ -293,3 +293,31 @@ lyricsmain = \lyricmode {
   }
 }
 
+\book {
+\bookOutputSuffix "no-vocal"
+\score {
+  <<
+    \new PianoStaff <<
+      \set PianoStaff.instrumentName = #"Piano"
+      \new Staff = "right" {
+        \set Staff.midiInstrument = #"acoustic grand"
+        \set Staff.midiMinimumVolume = #0.3
+        \set Staff.midiMaximumVolume = #0.7
+        \upper
+      }
+      \new Dynamics = "Dynamics_pf" \dynamics
+      \new Staff = "left" {
+        \set Staff.midiInstrument = #"acoustic grand"
+        \set Staff.midiMinimumVolume = #0.3
+        \set Staff.midiMaximumVolume = #0.7
+        \lower
+      }
+    >>
+  >>
+  \midi {
+    \context {
+      \ChordNameVoice \remove Note_performer
+    }
+  }
+}
+}
