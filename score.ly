@@ -44,17 +44,95 @@ rhMark = \markup {
 }
 
 \header {
-  title = "陳芳語 - 愛你"
+  title = "陳芳語 - 愛你 (Waltz)"
   subtitle = "For female vocal and piano accompaniment"
   arranger = "Arranged by Benson"
 }
 
+upper-verse-one = \relative c'' {
+  \repeat unfold 3 { r4 <a b>8-. r <a cis-.> r }
+  r4 <f b>8-. r <f cis'>-. r
+  \repeat unfold 3 { r4 <a b>8-. r <a cis>-. r }
+  r4 <a b>8-. r <gis b>-. r
+
+  \repeat unfold 3 { r4 <a b>8-. r <a cis-.> r }
+  r4 <f b>8-. r <f cis'>-. r
+  \repeat unfold 3 { r4 <a b>8-. r <a cis>-. r }
+  r4 <a b>8-. r <gis b>-. r
+
+  r4 <a b>8-. r <a cis>-. r
+}
+
+lower-verse-one = \relative c' {
+  a8( e') r e r e
+  fis,8( e') r e r e
+  d,8( e') r e r e
+  d,8( e') r e r e
+  a,8( e') r e r e
+  fis,8( e') r e r e
+  d,8( e') r e r e
+  e,8( e') r e r e
+
+  a,8( e') r e r e
+  fis,8( e') r e r e
+  d,8( e') r e r e
+  d,8( e') r e r e
+  a,8( e') r e r gis,
+  fis8( e') r e r e
+  d,8( e') r e r e
+  e,8( e') r e r e
+
+  a,8( e') r e r e
+}
+
+upper-chorus-one = \relative c'' {
+  r4 <a b>8-. r <a cis>-. r
+
+  \repeat unfold 3 { r4 <a b>8-. r <a cis>-. r }
+  r4 <a b>8-. r <gis b>-. r
+
+  \repeat unfold 3 { r4 <a b>8-. r <a cis>-. r }
+  r4 <a b>8-. r <gis b>-. r
+
+  \repeat unfold 3 { r4 <a b>8-. r <a cis>-. r }
+  r4 <a b>8-. r <gis b>-. r
+
+  s2.*4
+}
+
+lower-chorus-one = \relative c' {
+  a8( e') r e a, gis
+
+  fis8( e') r e r e
+  d,8( e') r e r e
+  a,8( e') r e r e
+  e,8( e') r e r e
+
+  fis,8( e') r e r e
+  d,8( e') r e r e
+  a,8( e') r e r e
+  e,8( e') r e e, eis
+
+  fis8( e') r e r e
+  d,8( e') r e r e
+  a,8( e') r e r e
+  e,8( e') r e r e
+
+  b,8 fis' \cr a d fis a
+  \cl cis,, e \cr a cis e a
+  \cl d,, a' \cr d f a d
+  \cl e,, gis \cr b e gis b
+  \cl
+}
 
 upper = \relative c' {
   \clef treble
-  \tempo 4 = 126
+  \tempo 4 = 144
   \time 3/4
   \key a \major
+  R2.
+  \upper-verse-one
+  \upper-chorus-one
   \bar "|."
 }
 
@@ -62,6 +140,9 @@ lower = \relative c {
   \clef bass
   \time 3/4
   \key a \major
+  R2.
+  \lower-verse-one
+  \lower-chorus-one
   \bar "|."
 }
 
@@ -81,8 +162,8 @@ melody = \relative c'' {
 
   % chorus
   a4 cis e a4 gis a8 gis a4 cis b8 a a4 e cis' b r8
-  e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4 e cis b
-  r8 cis' b a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
+  e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4. e8 cis4 b8 r
+  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b r8 a gis4 a2.
   R2.*3 R2.*4
 
@@ -94,8 +175,8 @@ melody = \relative c'' {
 
   % chorus 2
   a4 cis e a4 gis a8 gis a4 cis b8 a a4 e cis' b r8
-  e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4 e cis b
-  r8 cis' b a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
+  e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4. e8 cis4 b8 r
+  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b r8 a gis4 a2.
   
   % bridge
@@ -109,8 +190,8 @@ melody = \relative c'' {
 
   % chorus 3
   a,4 cis e a4 gis a8 gis a4 cis b8 a a4 e cis' b r8
-  e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4 e cis b
-  r8 cis' b a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
+  e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4. e8 cis4 b8 r8
+  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b r8 a gis4 a2.
   r2
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b2. r2. r4 a gis4 a2.
