@@ -52,7 +52,7 @@ rhMark = \markup {
 
 upper = \relative c' {
   \clef treble
-  \tempo 4 = 72
+  \tempo 4 = 126
   \time 3/4
   \key a \major
   \bar "|."
