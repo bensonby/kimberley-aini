@@ -161,9 +161,9 @@ melody = \relative c'' {
   a8 a4 b cis fis, r8 fis fis4 cis'4 d4 cis b4. a8 gis4 a2 r4
 
   % chorus
-  a4 cis e a4 gis a8 gis a4 cis b8 a a4 e cis' b r8
+  a4 cis e a4 gis a8 gis a4 cis b8 a a4 e4. cis'8 b4 r8
   e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4. e8 cis4 b8 r
-  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
+  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e4. cis'8 b4 r
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b r8 a gis4 a2.
   R2.*3 R2.*4
 
@@ -174,9 +174,9 @@ melody = \relative c'' {
   a8 a4 b cis fis, r8 fis fis4 cis'4 d4 cis b4. a8 gis4 a2 r4
 
   % chorus 2
-  a4 cis e a4 gis a8 gis a4 cis b8 a a4 e cis' b r8
+  a4 cis e a4 gis a8 gis a4 cis b8 a a4 e4. cis'8 b4 r8
   e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4. e8 cis4 b8 r
-  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
+  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e4. cis'8 b4 r
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b r8 a gis4 a2.
   
   % bridge
@@ -189,9 +189,9 @@ melody = \relative c'' {
   R2.
 
   % chorus 3
-  a,4 cis e a4 gis a8 gis a4 cis b8 a a4 e cis' b r8
+  a,4 cis e a4 gis a8 gis a4 cis b8 a a4 e4. cis'8 b4 r8
   e,8 fis gis a4 gis a8 gis a4 gis fis8 e fis4. e8 cis4 b8 r8
-  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e cis' b r
+  cis'4 b8 a a4 gis a8 gis a4 cis b8 a a4 e4. cis'8 b4 r
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b r8 a gis4 a2.
   r2
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b2. r2. r4 a gis4 a2.
