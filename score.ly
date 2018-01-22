@@ -125,6 +125,75 @@ lower-chorus-one = \relative c' {
   \cl
 }
 
+upper-episode = \relative c' {
+  R2.*8
+}
+
+lower-episode = \relative c {
+  R2.*8
+}
+
+upper-verse-two = \relative c' {
+  \repeat unfold 3 { r4 <e a>8-. b-. q-. b-. }
+  r4 <f' a>8-. b,-. q-. b-.
+  \repeat unfold 4 { r4 <e a>8-. b-. q-. b-. }
+  \repeat unfold 3 { r4 <e a>8-. b-. q-. b-. }
+  r4 <f' a>8-. b,-. q-. b-.
+  \repeat unfold 4 { r4 <e a>8-. b-. q-. b-. }
+  r4 <e a>8-. b-. q-. b-.
+}
+
+upper-chorus-two = \relative c' {
+  \repeat unfold 13 { r4 <e a>8-. b-. q-. b-. }
+  s2.*4
+}
+
+lower-verse-two = \relative c {
+  a8( b') r4 r4
+  fis,8( b') r4 r4
+  d,,8( b'') r4 r4
+  d,,8( b'') r4 r4
+  a,8( b') r4 r4
+  fis,8( b') r4 r4
+  d,,8( b'') r4 r4
+  e,,8( b'') r4 r4
+
+  a,8( b') r4 r4
+  fis,8( b') r4 r4
+  d,,8( b'') r4 r4
+  d,,8( b'') r4 r4
+  a,8( b') r4 r4
+  fis,8( b') r4 r4
+  d,,8( b'') r4 r4
+  e,,8( b'') r4 r4
+
+  a,8( b') r4 r4
+}
+lower-chorus-two = \relative c {
+  a8( b') r4 a,8 gis
+
+  fis8( b') r4 r4
+  d,,8( b'') r4 r4
+  a,8( b') r4 r4
+  e,,8( b'') r4 r4
+
+  fis,8( b') r4 r4
+  d,,8( b'') r4 r4
+  a,8( b') r4 r4
+  e,,8( b'') r4 e,,8 eis
+
+  fis8( b') r4 r4
+  d,,8( b'') r4 r4
+  a,8( b') r4 r4
+  e,,8( b'') r4 r4
+
+  b,8[ fis'] \cr a d fis a
+  \cl cis,,[ e] \cr a cis e a
+  \cl d,,[ a'] \cr d f a d
+  \cl e,,[ gis] \cr b e gis b
+  \cl
+}
+
 upper = \relative c' {
   \clef treble
   \tempo 4 = 144
@@ -133,6 +202,9 @@ upper = \relative c' {
   R2.
   \upper-verse-one
   \upper-chorus-one
+  \upper-episode
+  \upper-verse-two
+  \upper-chorus-two
   \bar "|."
 }
 
@@ -143,6 +215,9 @@ lower = \relative c {
   R2.
   \lower-verse-one
   \lower-chorus-one
+  \lower-episode
+  \lower-verse-two
+  \lower-chorus-two
   \bar "|."
 }
 
