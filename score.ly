@@ -125,12 +125,26 @@ lower-chorus-one = \relative c' {
   \cl
 }
 
-upper-episode = \relative c' {
-  R2.*8
+upper-episode = \relative c'' {
+  << {
+    a4.\( b8 cis4~ cis2 e4 e d4. cis8 cis2 b4\)
+    a8\( gis a b cis4~ cis2 e4 gis4 fis e d4. cis8 b4\)
+  } \\ {
+    \repeat unfold 3 { r4 <e, a>8-. r q-. r }
+    r4 <f a>8-. r q-. r
+    \repeat unfold 4 { r4 <e a>8-. r q-. r }
+  } >>
 }
 
 lower-episode = \relative c {
-  R2.*8
+  a8( b') r b-. r b-.
+  fis,8( b') r b-. r b-.
+  d,,8( b'') r b-. r b-.
+  d,,8( b'') r b-. r b-.
+  a,8( b') r b-. r b-.
+  fis,8( b') r b-. r b-.
+  d,,8( b'') r b-. r b-.
+  e,,8( b'') r b-. r b-.
 }
 
 upper-verse-two = \relative c' {
