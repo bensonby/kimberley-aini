@@ -208,6 +208,92 @@ lower-chorus-two = \relative c {
   \cl
 }
 
+upper-bridge = \relative c' {
+  s2. eis8 gis, fis' gis, gis' gis,
+  <fis' a>2. <gis b>2. <e b'>2. <fis ais>2.
+  <d b'>2. <d e gis>2. <cis e a>2. <cis' e>4. <fis, d'>8 <e cis'>4
+  <fis a>4. d8 <fis d'>4 <d b'>4. f8 d'4
+  <a e'>4. b8 <a cis>4 <c, a'>4. fis8 e c
+  b8 d fis a d4
+  a,8 cis e a e'4
+  b,8 d fis a d fis
+  <e gis>8  d b gis e b
+  R2.
+}
+
+lower-bridge = \relative c {
+  a8 e' b' cis e a
+  <cis,,, cis'>2.
+  d4 <fis' a> q
+  d, <e' gis> q
+  cis, <e' gis> q
+  fis, <e' ais> q
+  b <fis' a> q
+  e, <fis' a> <gis b>
+  a, <cis e a> q
+  <a, a'> <b b'> <cis cis'>
+  d4 <fis' a> q
+  d,4 <f' a> q
+  cis,4 <e' a> q
+  c,4 <e' a> q
+  b,4 <fis'' a> q
+  cis, <e' a> q
+  d, <fis' b> q
+  e,4 <e' gis> q
+  e,,4 r r
+}
+
+upper-chorus-three = \relative c''' {
+  R2.
+  \repeat unfold 3 { r4 <a b>8-. r <a cis>-. r }
+  r4 <a b>8-. r <gis b>-. r
+
+  \repeat unfold 3 { r4 <a b>8-. r <a cis>-. r }
+  r4 <a b>8-. r <gis b>-. r
+  \repeat unfold 4 { r4 <e, a>8-. b-. q-. b-. }
+  s2.*4
+  cis'8 e, a d e a, a' cis, b' e, cis' a
+  % <a' cis>8 e <b' d> e, <cis' e> e, <d' fis> a <e' gis> a, <gis' b> a,
+  s2.*4
+  <b e>8 a gis e b gis
+  e4 r r
+}
+
+lower-chorus-three = \relative c' {
+  R2.
+  \clef treble
+  fis8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  a,8( e') r e-. r e-.
+  e,8( e') r e-. r e-.
+
+  fis,8( e') r e-. r e-.
+  d,8( e') r e-. r e-.
+  a,8( e') r e-. r e-.
+  e,8( e') r e-. \clef bass e,,,[ eis]
+
+  fis8( b') r4 r4
+  d,,8( b'') r4 r4
+  a,8( b') r4 r4
+  e,,8( b'') r4 r4
+
+  b,8[ fis'] \cr a d fis a
+  \cl cis,,[ e] \cr a cis e a
+  \cl d,,[ a'] \cr d f a d
+  \cl e,,[ gis] \cr b e gis b
+  \cl
+  a,,8 r cis r e r a r cis r e r
+
+  \clef treble
+  b8[ fis'] \cr a d fis a
+  \cl cis,,[ e] \cr a cis e a
+  \cl d,,[ a'] \cr d fis a d
+  \cl e,,[ a] \cr b d e a
+  \cl R2.
+  \clef bass
+  e,,
+}
+
 upper = \relative c' {
   \clef treble
   \tempo 4 = 144
@@ -219,6 +305,8 @@ upper = \relative c' {
   \upper-episode
   \upper-verse-two
   \upper-chorus-two
+  \upper-bridge
+  \upper-chorus-three
   \bar "|."
 }
 
@@ -232,6 +320,8 @@ lower = \relative c {
   \lower-episode
   \lower-verse-two
   \lower-chorus-two
+  \lower-bridge
+  \lower-chorus-three
   \bar "|."
 }
 
@@ -330,8 +420,8 @@ lyricsmain = \lyricmode {
     \new Staff = "melodystaff" <<
       \set Staff.midiInstrument = #"electric guitar (clean)"
       \set Staff.instrumentName = #"Vocal"
-      \set Staff.midiMinimumVolume = #0.9
-      \set Staff.midiMaximumVolume = #1
+      \set Staff.midiMinimumVolume = #0.7
+      \set Staff.midiMaximumVolume = #0.8
       \new Voice = "melody" {
         \melody
       }
@@ -341,15 +431,15 @@ lyricsmain = \lyricmode {
       \set PianoStaff.instrumentName = #"Piano"
       \new Staff = "right" {
         \set Staff.midiInstrument = #"acoustic grand"
-        \set Staff.midiMinimumVolume = #0.3
-        \set Staff.midiMaximumVolume = #0.7
+        \set Staff.midiMinimumVolume = #0.9
+        \set Staff.midiMaximumVolume = #1
         \upper
       }
       \new Dynamics = "Dynamics_pf" \dynamics
       \new Staff = "left" {
         \set Staff.midiInstrument = #"acoustic grand"
-        \set Staff.midiMinimumVolume = #0.3
-        \set Staff.midiMaximumVolume = #0.7
+        \set Staff.midiMinimumVolume = #0.9
+        \set Staff.midiMaximumVolume = #1
         \lower
       }
     >>
