@@ -50,7 +50,10 @@ rhMark = \markup {
 }
 
 upper-prelude = \relative c'' {
-  \repeat unfold 8 { r4 <a b>8-. r <a cis-.> r }
+  \repeat unfold 3 { r4 <a b>8-. r <a cis-.> r }
+  r4 <a b>8-. r <gis b>-. r
+  \repeat unfold 3 { r4 <a b>8-. r <a cis-.> r }
+  r4 <a b>8-. r <gis b>-. r
 }
 
 lower-prelude = \relative c' {
@@ -141,7 +144,7 @@ lower-chorus-one = \relative c' {
 upper-episode = \relative c'' {
   << {
     a4.\( b8 cis4~ cis2 e4 e d4. cis8 cis2 b4\)
-    a8\( gis a b cis4~ cis2 e4 gis4 fis e d4. cis8 b4\)
+    a8\( gis a b cis4~ cis2 e4 fis4 e a, d4. cis8 b4\)
   } \\ {
     \repeat unfold 3 { r4 <e, a>8-. r q-. r }
     r4 <f a>8-. r q-. r
