@@ -49,6 +49,19 @@ rhMark = \markup {
   arranger = "Arranged by Benson"
 }
 
+upper-prelude = \relative c'' {
+  \repeat unfold 8 { r4 <a b>8-. r <a cis-.> r }
+}
+
+lower-prelude = \relative c' {
+  \repeat unfold 2 {
+    a8( e') r e-. r e-.
+    fis,8( e') r e-. r e-.
+    d,8( e') r e-. r e-.
+    e,8( e') r e-. r e-.
+  }
+}
+
 upper-verse-one = \relative c'' {
   \repeat unfold 3 { r4 <a b>8-. r <a cis-.> r }
   r4 <f b>8-. r <f cis'>-. r
@@ -294,12 +307,26 @@ lower-chorus-three = \relative c' {
   e,,
 }
 
+upper-outro = \relative c' {
+  \repeat unfold 3 { r4 <e a>8-. b-. q-. b-. }
+  <d fis>8 gis, <cis e> gis <b d> gis
+  <a cis>2.
+}
+
+lower-outro = \relative c {
+  a8( b') r4 r
+  fis,8( b') r4 r
+  d,,8( b'') r4 r
+  e,,8( e') r4 r
+  a,2.
+}
+
 upper = \relative c' {
   \clef treble
   \tempo 4 = 144
   \time 3/4
   \key a \major
-  R2.
+  \upper-prelude
   \upper-verse-one
   \upper-chorus-one
   \upper-episode
@@ -307,6 +334,7 @@ upper = \relative c' {
   \upper-chorus-two
   \upper-bridge
   \upper-chorus-three
+  \upper-outro
   \bar "|."
 }
 
@@ -314,7 +342,7 @@ lower = \relative c {
   \clef bass
   \time 3/4
   \key a \major
-  R2.
+  \lower-prelude
   \lower-verse-one
   \lower-chorus-one
   \lower-episode
@@ -322,6 +350,7 @@ lower = \relative c {
   \lower-chorus-two
   \lower-bridge
   \lower-chorus-three
+  \lower-outro
   \bar "|."
 }
 
@@ -332,6 +361,7 @@ melody = \relative c'' {
   \clef treble
   \time 3/4
   \key a \major
+  R2.*7
   r2 r8
   % verse 1
   a8 a4 b cis gis'4. fis8 cis4 e4. d8 a4 cis b r8
@@ -375,6 +405,7 @@ melody = \relative c'' {
   r2
   cis,4 d2 a'4 a4 r8 a d, cis d4 d cis' b2. r2. r4 a gis4 a2.
 
+  R2.*4
   \bar "|."
 }
 
